@@ -22,7 +22,8 @@ public class Tester {
                 System.out.println("The time of the year is autumn\n");
                 break;
         }
-        System.out.println(season_favourite.getDescription() + "\n");
+        System.out.println(season_favourite.name() + "\t" + season_favourite.getDescription() + "\n");
+        System.out.println(Season.WINTER.name() + "\t" + Season.WINTER.getDescription() + "\n");
         Season[] season = Season.values();
         for(Season x: season){
             System.out.println(x.getInfo());
