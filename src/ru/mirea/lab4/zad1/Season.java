@@ -15,8 +15,7 @@ public enum Season {
     AUTUMN("Cloudy and atmospheric", 12);
 
 
-    Season(){
-    }
+
     private String info;
     private int temperature;
     Season(String info, int temperature){

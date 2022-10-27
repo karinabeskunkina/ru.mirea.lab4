@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Tester {
     public static void main(String[] args) {
-        Season season_favourite = Season.SUMMER;
-        System.out.println(season_favourite.getInfo() + "\n");
+        Season seasonFavourite = Season.SUMMER;
+        System.out.println(seasonFavourite.getInfo() + "\n");
         Scanner sourse = new Scanner(System.in);
         Season s = Season.valueOf(sourse.next());
         switch (s){
@@ -22,7 +22,7 @@ public class Tester {
                 System.out.println("The time of the year is autumn\n");
                 break;
         }
-        System.out.println(season_favourite.name() + "\t" + season_favourite.getDescription() + "\n");
+        System.out.println(seasonFavourite.name() + "\t" + seasonFavourite.getDescription() + "\n");
         System.out.println(Season.WINTER.name() + "\t" + Season.WINTER.getDescription() + "\n");
         Season[] season = Season.values();
         for(Season x: season){
